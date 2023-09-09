@@ -46,10 +46,8 @@ h2 {
 }
 
 img {
-  object-fit: contain;
   object-fit: cover;
-  width: 500px;
-  height: 600px;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   display: block;
