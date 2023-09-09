@@ -20,11 +20,5 @@ const currentUTCTime = currentDate.getTime();
 
 const currentUTCTimeDate = new Date(currentUTCTime);
 
-// Get hours and minutes in 12-hour format
-let hours = currentUTCTimeDate.getUTCHours();
-const minutes = currentUTCTimeDate.getUTCMinutes();
-
-const currentTime = `${hours}:${minutes < 10 ? "0" : ""}${minutes}`;
-
 dayOfTheWeek.textContent = currentDay;
-timeOfTheDay.textContent = currentTime;
+timeOfTheDay.textContent = currentUTCTime;
