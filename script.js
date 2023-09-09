@@ -23,10 +23,6 @@ const currentUTCTimeDate = new Date(currentUTCTime);
 // Get hours and minutes in 12-hour format
 let hours = currentUTCTimeDate.getUTCHours();
 const minutes = currentUTCTimeDate.getUTCMinutes();
-const amOrPm = hours >= 12 ? "PM" : "AM";
-
-// Convert to 12-hour format
-hours = hours % 12 || 12;
 
 const currentTime = `${hours}:${minutes < 10 ? "0" : ""}${minutes} ${amOrPm}`;
 
